@@ -8,6 +8,11 @@ databases:
   name: my-postgresql-database
 routers:
 - name: main
+  custom_domains:
+  - branch: master
+    domain: parisian-api.qvy.io
+  - branch: dev
+    domain: parisian-api-dev.qvy.io
   routes:
   - application_name: hasura
     paths:
